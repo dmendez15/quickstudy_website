@@ -10,19 +10,52 @@
             <div class="sidebar">
                 <h2>Quick Study</h2>
                 <ul>
-                    <li><a href="Index.html"><img class="icon" src="Data/icons/home.png">Home</a></li>
-                    <li><a href="todo.html"><img class="icon" src="Data/icons/todo.png">To-Do</a></li>
-                    <li><a href="#"><img class="icon" src="Data/icons/login.png">Login</a></li>
-                    <li><a href="about.html"><img class="icon" src="Data/icons/about.png">About</a></li>
+                    <li><a href="Index.html"><img class="icon" src="assets/icons/home.png">Home</a></li>
+                    <li><a href="todo.html"><img class="icon" src="assets/icons/todo.png">To-Do</a></li>
+                    <li><a href="LogInWebform.aspx"><img class="icon" src="assets/icons/login.png">Log In</a></li>
+                    <li><a href="SignUpWebform.aspx"><img class="icon" src="assets/icons/signup.png">Sign Up</li>
+                    <li><a href="about.html"><img class="icon" src="assets/icons/about.png">About</a></li>
                 </ul>
             </div>
             <!--Navigation Side Bar END-->
             <div class="main_content">
                 <div class="header">Home</div>
                 <div class="info">
-                    <div>This is where the user will see all of there created card sets as well as have the ability to create new ones.</div>
+                    <div class="decks">
+                        <h2>Deck1</h2>
+                        <button id="btnPrevDeck">Previous</button>
+                        <button id="btnNextDeck">Next</button><br />
+                        <button>Create new deck</button>
+                    </div>
+                    <!--Current Card-->
+                    <div>
+                        <table class="flashcard">
+                            <tr>
+                                <td id="card"><textarea id="cardText" readonly="readonly" cols="30" rows="5"></textarea></td>
+                            </tr>
+                        </table>
+                        <button id="btnPrevCard" onclick="prevCard()">Previous</button>
+                        <button id="btnFlip" onclick="flipCard()">Flip</button>
+                        <button id="btnNextCard" onclick="nextCard()">Next</button>
+                        <button id="btnRandom" onclick="randomCard()">Random</button>
+                    </div>
+                    <!--Current Card END-->
+                    <!--New Card-->
+                    <div>
+                        <table class="flashcard">
+                            <tr>
+                                <td id="sideA"><textarea cols="30" rows="5" placeholder="Side A"></textarea></td>
+                            </tr>
+                            <tr>
+                                <td id="sideB"><textarea cols="30" rows="5" placeholder="Side B"></textarea></td>
+                            </tr>
+                        </table>
+                        <button id="btnAdd" onclick="addCard()">Add Card</button>
+                    </div>
+                    <!--New Card END-->
                 </div>
             </div>
         </div>
+        <script src="js/FlashCard.js"></script>
     </body>
 </html>

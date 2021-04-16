@@ -11,6 +11,10 @@ body{
     background: #fff;
 }
 
+button {
+    padding: 2px;
+}
+
 .wrapper{
     display: flex;
     position: relative;
@@ -72,4 +76,48 @@ body{
 
 .wrapper .main_content .info div{
     margin-bottom: 20px;
+    text-align: center;
+}
+
+.wrapper .main_content .info .decks{
+    display: block;
+}
+
+.wrapper .main_content .info .flashcard{
+    margin: auto;
+    border: 2px solid #e0e4e8
+}
+
+#sideA{
+    padding: 10px;
+}
+
+#sideB{
+    padding: 10px;
+}
+
+#card{
+    padding: 10px;
+}
+
+.wrapper .main_content .info .table {
+    width: auto;
+    border: 2px solid #e0e4e8;
+    margin: auto;
+}
+
+.wrapper .main_content .info .table h2 {
+    text-align: center;
+}
+
+.wrapper .main_content .info .table .button{
+    text-align: center;
+}
+
+.ValidSummary {
+    text-align: center;
+}
+
+#btnAdd{
+    padding: 2px 20px;
 }
