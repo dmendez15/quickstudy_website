@@ -88,6 +88,10 @@ button {
     border: 2px solid #e0e4e8
 }
 
+#deckTitle{
+    margin: 15px 0;
+}
+
 #sideA{
     padding: 10px;
 }
@@ -120,4 +124,23 @@ button {
 
 #btnAdd{
     padding: 2px 20px;
+}
+
+.form_popup{
+    display: none;
+    position: fixed;
+    border: 3px solid #f1f1f1;
+}
+
+.form_container{
+    max-width: 300px;
+    padding: 10px;
+}
+
+.form_container input[type=text]{
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0;
+    border: none;
+    background: #f1f1f1;
 }

@@ -1,7 +1,7 @@
 ﻿var Deck = [];
+var DeckName = [];
 var cardText = document.getElementById("cardText");
-var sideA = document.getElementById("sideA");
-var sideB = document.getElementById("sideB");
+var deckTitle = document.getElementById("deckTitle");
 var deckIndex = 0;
 var cardIndex = 0;
 var showingA = true;
@@ -11,6 +11,16 @@ var card2 = ["HTML", "Hypertext Markup Language, a standardized system for taggi
 var card3 = ["CSS", "Stands for Cascading Style Sheet."];
 
 Deck[0] = [card1, card2, card3];
+DeckName[0] = "Internet Programming";
+
+var card4 = ["This is card4 A", "This is card4 B"];
+var card5 = ["This is card5 A", "This is card5 B"];
+var card6 = ["This is card6 A", "This is card6 B"];
+
+Deck[1] = [card4, card5, card6];
+DeckName[1] = "Test Deck";
+
+deckTitle.innerHTML = DeckName[0];
 
 //Flip button
 function flipCard() {
@@ -24,8 +34,26 @@ function flipCard() {
     }
 }
 
-function addCard() {
+function nextDeck() {
+    deckIndex = (deckIndex + 1) % Deck.length;
+    deckTitle.innerHTML = DeckName[deckIndex];
+    cardText.innerHTML = Deck[deckIndex][0][0];
+}
 
+function prevDeck() {
+    if (deckIndex > 0) {
+        deckIndex = (deckIndex - 1);
+    }
+    else if (deckIndex == 0) {
+        deckIndex = Deck.length - 1;
+    }
+    deckTitle.innerHTML = DeckName[deckIndex];
+    cardText.innerHTML = Deck[deckIndex][0][0];
+}
+
+function addCard() {
+    
+    
 }
 
 function nextCard() {
@@ -48,11 +76,19 @@ function prevCard() {
 function randomCard() {
     var randomNum = Math.floor(Math.random() * Deck[deckIndex].length); // Returns a random integer from 0 to the current deck length.
     if (randomNum == cardIndex) {
-        cardIndex = randomNum + 1; //todo FIX may go out of bounds.
+        nextCard();
     }
     else {
         cardIndex = randomNum;
     }
     cardText.innerHTML = Deck[deckIndex][cardIndex][0];
     showingA = true;
+}
+
+//When the user clicks the "Create new deck" button
+function openNameWindow() {
+    document.getElementById("nameForm").style.display = "block";
+}
+function closeNameWindow() {
+    document.getElementById("nameForm").style.display = "none";
 }

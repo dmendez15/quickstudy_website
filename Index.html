@@ -22,10 +22,18 @@
                 <div class="header">Home</div>
                 <div class="info">
                     <div class="decks">
-                        <h2>Deck1</h2>
-                        <button id="btnPrevDeck">Previous</button>
-                        <button id="btnNextDeck">Next</button><br />
-                        <button>Create new deck</button>
+                        <h1 id="deckTitle"></h1>
+                        <button id="btnPrevDeck" onclick="prevDeck()">Previous</button>
+                        <button id="btnNextDeck" onclick="nextDeck()">Next</button><br />
+                        <button onclick="openNameWindow()">Create new deck</button>
+                        <div class="form_popup" id="nameForm">
+                            <form class="form_container">
+                                <h1>New Deck</h1>
+                                <input type="text" placeholder="Enter a name" required />
+                                <button type="submit">Save</button>
+                                <button type="button" onclick="closeNameWindow()">Close</button>
+                            </form>
+                        </div>
                     </div>
                     <!--Current Card-->
                     <div>
