@@ -85,19 +85,15 @@ button {
 
 .wrapper .main_content .info .flashcard{
     margin: auto;
-    border: 2px solid #e0e4e8
+    border: 2px solid #e0e4e8;
+}
+
+.padding{
+    padding: 10px;
 }
 
 #deckTitle{
     margin: 15px 0;
-}
-
-#sideA{
-    padding: 10px;
-}
-
-#sideB{
-    padding: 10px;
 }
 
 #card{
