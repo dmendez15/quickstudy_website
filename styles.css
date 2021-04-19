@@ -15,6 +15,10 @@ button {
     padding: 2px;
 }
 
+.homeButton{
+    padding: 2px;
+}
+
 .wrapper{
     display: flex;
     position: relative;
