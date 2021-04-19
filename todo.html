@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>Quick Study</title>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="list.css">
     </head>
     <body>
         <div class="wrapper">
@@ -19,11 +19,20 @@
             </div>
             <!--Navigation Side Bar END-->
             <div class="main_content">
-                <div class="header">To-Do</div>
-                <div class="info">
-                    <div>This is where the user can make a simple to-do list and then check them off when it's complete.</div>
+                <div class="header">To-Do List</div>
+                <div id="myDIV" class="header">
+                    <input type="text" id="myInput" placeholder="">
+                    <span onclick="newElement()" class="addBtn">Add</span>
                 </div>
+                <ul id="myUL" class="List">
+                    <li>Study for test</li>
+                    <li>Go to class</li>
+                    <li>Meet for project</li>
+                    <li>Eat lunch</li>
+                    <li>Read textbook</li>
+                    <li>Organize notes</li>
             </div>
         </div>
+        <script src="TodoList.js"></script>
     </body>
 </html>

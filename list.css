@@ -1,0 +1,165 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
+    background: #fff;
+}
+
+.wrapper {
+    display: flex;
+    position: relative;
+}
+
+.wrapper .sidebar {
+        position: fixed;
+        width: 200px;
+        height: 100%;
+        background: #0067c5;
+        padding: 30px 0;
+}
+
+.wrapper .sidebar h2 {
+            color: #fff;
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 30px;
+}
+
+.wrapper .sidebar ul li {
+            padding: 15px;
+            border-bottom: 2px solid rgba(0,0,0,0.10);
+            border-top: 2px solid rgba(225,225,225,0.10);
+}
+
+.wrapper .sidebar ul li a {
+                color: #fff;
+                display: block;
+                text-align: left;
+}
+
+.wrapper .sidebar .icon {
+            margin-right: 10px;
+}
+
+.wrapper .sidebar ul li:hover {
+            background: #007f3e
+}
+
+.wrapper .main_content {
+        width: 100%;
+        margin-left: 200px;
+}
+
+.wrapper .main_content .header {
+            padding: 20px;
+            text-align: center;
+            font-size: 260%;
+            background: #007f3e;
+            color: #fff;
+            border-bottom: 2px solid #e0e4e8;
+}
+
+.wrapper .main_content .info {
+            margin: 20px;
+            line-height: 25px;
+}
+
+.wrapper .main_content .info div {
+                margin-bottom: 20px;
+}
+
+.wrapper .main_content .List ul {
+            margin: 0;
+            padding: 0;
+}
+
+.wrapper .main_content .List ul li {
+                cursor: pointer;
+                position: absolute;
+                padding: 12px 8px 12px 30px;
+                background: #eee;
+                font-size: 18px;
+                transition: 0.2s;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+}
+
+.wrapper .main_content .List ul li:nth-child(odd) {
+                    background: #f9f9f9;
+}
+
+.wrapper .main_content .List ul li:hover {
+                    background: #ddd;
+}
+
+.wrapper .main_content .List ul li.checked {
+                    background: #888;
+                    color: #fff;
+                    text-decoration: line-through;
+}
+
+.wrapper .main_content .List ui li.checked::before {
+            content: '';
+            position: absolute;
+            border-color: #fff;
+            border-style: solid;
+            border-width: 0 2px 2px 0;
+            top: 10px;
+            left: 16px;
+            transform: rotate(45deg);
+            height: 15px;
+            width: 7px;
+}
+
+.wrapper .main_content .List .close {
+            position: relative;
+            right: 0;
+            top: 0;
+            padding: 8px 8px 8px 8px;
+}
+
+.wrapper .main_content .List .close:hover {
+    background-color: #f44336;
+    color: white;
+}
+
+.header:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.wrapper .main_content input {
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    width: 75%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+}
+
+.wrapper .main_content .header .addBtn {
+    padding: 10px;
+    width: 25%;
+    background: #d9d9d9;
+    color: #555;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0;
+}
+
+    .wrapper .main_content .header .addBtn:hover {
+        background-color: #bbb;
+    }

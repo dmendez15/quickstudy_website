@@ -80,6 +80,8 @@
     <Content Include="HomePage.aspx" />
     <Content Include="Index.html" />
     <Content Include="js\FlashCard.js" />
+    <Content Include="js\TodoList.js" />
+    <Content Include="list.css" />
     <Content Include="LogInWebform.aspx" />
     <Content Include="SignUpWebform.aspx" />
     <Content Include="styles.css" />
