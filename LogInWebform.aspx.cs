@@ -32,7 +32,7 @@ namespace QuickStudyWebsite
                     if (count == 1)
                     {
                         Session["username"] = txtboxUserName.Text.Trim();
-                        Response.Redirect("HomePage.aspx");
+                        //Todo add a Response.Redirect("Index.aspx");
                         // To have a user Log Out, place these next 2 lines on a log out button click:
                         // Session.Abandon();
                         // Response.Redirect("LogInWebform.aspx");

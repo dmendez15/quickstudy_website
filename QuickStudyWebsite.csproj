@@ -77,9 +77,10 @@
     <Content Include="assets\icons\login.png" />
     <Content Include="assets\icons\signup.png" />
     <Content Include="assets\icons\todo.png" />
-    <Content Include="HomePage.aspx" />
     <Content Include="Index.html" />
     <Content Include="js\FlashCard.js" />
+    <Content Include="js\TodoList.js" />
+    <Content Include="list.css" />
     <Content Include="LogInWebform.aspx" />
     <Content Include="SignUpWebform.aspx" />
     <Content Include="styles.css" />
@@ -87,13 +88,6 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="HomePage.aspx.cs">
-      <DependentUpon>HomePage.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="HomePage.aspx.designer.cs">
-      <DependentUpon>HomePage.aspx</DependentUpon>
-    </Compile>
     <Compile Include="LogInWebform.aspx.cs">
       <DependentUpon>LogInWebform.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -119,7 +113,6 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
