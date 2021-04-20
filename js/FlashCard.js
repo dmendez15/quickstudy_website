@@ -7,14 +7,17 @@ var cardNumber = 1;
 var deckIndex = 0;
 var cardIndex = 0;
 var showingA = true;
-
 var newCard = ["", ""]; // A blank card used for newly created decks. Get's overridden in addCard() function.
+var currentUser = document.getElementById("currentUser"); //currentUser.value = the user name of the user.
 
-var card1 = ["HTML", "Hypertext Markup Language, a standardized system for tagging text files to achieve font, color, graphic, and hyperlink effects on World Wide Web pages."];
-var card2 = ["Byte", "A group of binary digits or bits (usually eight) operated on as a unit."];
-var card3 = ["CSS", "Stands for Cascading Style Sheet."];
+var card1 = ["HTML", "HyperText Markup Language"];
+var card2 = ["CSS", "Cascading Style Sheet"];
+var card3 = ["Browser", "A piece of software such as Mozilla Firefox and Internet Explorer that allows a computer to access and display documents, view pictures, hear sound, and view video clips from the World Wide Web."];
+var card4 = ["HTTP", "The abbreviation for Hypertext Transfer Protocol. It is the set of rules by which Web pages are transferred across the Internet."];
+var card5 = ["E-mail", "Mail that's electronically transmitted by your computer. As opposed to snail mail, e-mail sends your messages instantaneously, anywhere in the world. It has the capability to send messages at any time and to anyone."];
+var card6 = ["Homepage", "The first page that is viewed when the browser starts. It is also the page of a Web site that provides the introduction or content with links."];
 
-Deck[0] = [card1, card2, card3];
+Deck[0] = [card1, card2, card3, card4, card5, card6];
 DeckName[0] = "Internet Programming";
 
 cardText.innerHTML = Deck[deckIndex][cardIndex][0];
